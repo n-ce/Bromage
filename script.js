@@ -3,7 +3,7 @@
 var nav = document.getElementsByTagName('h4');
 
 function fetchHtml(a,b) {
-  fetch(a+".html")
+  fetch("https://raw.githubusercontent.com/n-ce/SPACE-Modules/main/"+a+".html")
     .then((response) => {
       return response.text();
     })
