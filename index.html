@@ -1,51 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#1f1f1f" />
-    <title>SPACE</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-  <body>
-    <header>HOME</header>
-    <div>
-      <h1 class="A">A home, or domicile, is a space used as a permanent or semi-permanent residence for an individual, group or family. </h1>
-      
-      <h1 class="B">
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>4</span>
-        <span>5</span>
-        <span>6</span>
-        <span>7</span>
-        <span>8</span>
-        <span>9</span>
-      </h1>
-      
-      <h1 class="C" align="center">S.P.A.C.E. v1 <br>A Single Page Application Core Emulator Framework without NodeJS. <br><br>
-      <a href="https://github.com/n-ce/SPACE">
-        <i class="fab fa-github"></i>
-      </a>
-      </h1>
-    </div>
-    
-    <footer>
-      <h4 onclick="permutation(0,1,2,'Home')">
-        <i class="fas fa-home"></i>
-        <p>Home</p>
-      </h4>
-      <h4 onclick="permutation(1,0,2,'Apps')">
-        <i class="fas fa-th"></i>
-        <p>Apps</p>
-      </h4>
-      <h4 onclick="permutation(2,1,0,'About')">
-        <i class="fas fa-info-circle"></i>
-        <p>About</p>
-      </h4>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1f1f1f" />
+  <title>SPACE</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body onload="fetchHtml('Home',0)">
+  <header></header>
+  <div id="root">
+    <div id="preloader"></div>
+  </div>
+  <footer>
+    <h4 onclick="fetchHtml('Home',0)">
+      <i class="fas fa-home"></i>
+      <p>Home</p>
+    </h4>
+    <h4 onclick="fetchHtml('Apps',1)">
+      <i class="fas fa-th"></i>
+      <p>Apps</p>
+    </h4>
+    <h4 onclick="fetchHtml('About',2)">
+      <i class="fas fa-info-circle"></i>
+      <p>About</p>
+    </h4>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
