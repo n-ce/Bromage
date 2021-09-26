@@ -13,7 +13,10 @@ function fetchHtml(a, b) {
     });
 }
 
-if (window.localStorage.getItem('theme') == "dark") {
+
+//DarkMode 
+
+if (localStorage.getItem('theme')) {
   dark();
 }
 
@@ -22,6 +25,10 @@ function dark() {
   for (var i = 0; i < 4; i++) {
     document.querySelectorAll('.button')[i].classList.toggle("buttonDark");
   }
-  window.localStorage.setItem('theme', "dark");
-
+  if (document.body.classList.contains("bodyDark")) {
+    localStorage.setItem('theme', "dark");
+  }
+  else {
+    localStorage.setItem('theme', "");
+  }
 }
