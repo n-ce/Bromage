@@ -13,6 +13,10 @@ function fetchHtml(a, b) {
     });
 }
 
+//drawer
+function drawer(){
+  document.querySelectorAll('.nav')[1].classList.toggle("drawer");
+}
 
 //DarkMode 
 
@@ -31,4 +35,12 @@ function dark() {
   else {
     localStorage.setItem('theme', "");
   }
+}
+
+//fullscreen
+function fullscreen(){
+document.documentElement.requestFullscreen();
+}
+function exitfs(){
+  document.exitFullscreen();
 }

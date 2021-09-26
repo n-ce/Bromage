@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 #preloader {
   border: 0.5rem solid transparent;
   border-radius: 50%;
@@ -6,6 +8,7 @@
   height: 4rem;
   animation: spin 750ms linear infinite;
 }
+
 @keyframes spin {
   0% {
     transform: rotate(0deg)
@@ -23,32 +26,42 @@ body {
   margin: 0;
   flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(165deg,#fff,#aaa);
+  background-image: linear-gradient(165deg, #fff, #aaa);
+  font-family: Poppins, monospace;
 }
-.bodyDark{
-  background-image: linear-gradient(165deg,#555,#000);
+
+.bodyDark {
+  background-image: linear-gradient(165deg, #555, #000);
   color: white;
 }
+
 body,
 .nav {
   display: flex;
   align-items: center;
 }
 
-.nav,
 #root {
-  width: 90%
+  height: 90%;
+  justify-content: center;
+  overflow: scroll;
+  padding: 1rem;
+  width: 90%;
+  border: 1px solid red;
 }
 
 .nav {
   height: 7%;
-  background-image: linear-gradient(165deg,#6BF7,#2AF8);
+  background-image: linear-gradient(165deg, #6BF7, #2AF8);
   justify-content: space-around;
   border: 0.1rem solid #1E88E5;
   border-radius: 1rem;
   box-shadow: 0.15rem 0.3rem 0.3rem #04C3;
   position: sticky;
-  top: 1%;
+  top: 0.5%;
+  margin-bottom: 3%;
+  animation: slide 0.5s ease-in-out;
+  width: 90%;
 }
 
 .button {
@@ -62,26 +75,26 @@ body,
   transition: transform 0.3s ease-in-out;
   box-shadow: 0.05rem 0.1rem 0.1rem #04C3;
 }
-.buttonDark{
-  color:#fff;
+
+.buttonDark {
+  color: #fff;
   background-color: #6CF7;
   border-color: #0002;
 }
+
 .button:focus {
   transform: scale(1.1);
   background-color: #fffa;
 }
 
-.buttonDark:focus{
+.buttonDark:focus {
   background-color: #0007;
 }
 
-#root {
-  height: 90%;
-  overflow-wrap: break-word;
-  overflow:scroll;
-  padding: 1rem;
+.drawer {
+  display: none;
 }
+
 
 @media (orientation:landscape) {
 
@@ -91,7 +104,7 @@ body,
   }
 
   .nav,
-  root {
+  #root {
     height: 90%;
   }
 
@@ -99,9 +112,16 @@ body,
     width: 7%;
     flex-direction: column;
     left: 1%;
+    margin-right: 2%;
   }
 
   #root {
     width: 90%;
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(-100%);
   }
 }
