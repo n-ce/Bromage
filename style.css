@@ -26,12 +26,12 @@ body {
   margin: 0;
   flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(165deg, #fff, #aaa);
+  background-image: linear-gradient(165deg, #fff, #ccc);
   font-family: Poppins, monospace;
 }
 
 .bodyDark {
-  background-image: linear-gradient(165deg, #555, #000);
+  background-image: linear-gradient(165deg, #333, #000);
   color: white;
 }
 
