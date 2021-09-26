@@ -11,24 +11,19 @@
 </head>
 
 <body onload="fetchHtml('Home',0)">
-  <header></header>
+  
+  <div class="nav">
+    <header></header>
+    <button class="button fas fa-home" onclick="fetchHtml('Home',0)"></button>
+    <button class="button fas fa-th" onclick="fetchHtml('Apps',1)"></button>
+    <button class="button fas fa-info-circle" onclick="fetchHtml('About',2)"></button>
+    <button class="button fas fa-adjust" onclick="dark()"></button>
+  </div>
+  
   <div id="root">
     <div id="preloader"></div>
   </div>
-  <footer>
-    <h4 onclick="fetchHtml('Home',0)">
-      <i class="fas fa-home"></i>
-      <p>Home</p>
-    </h4>
-    <h4 onclick="fetchHtml('Apps',1)">
-      <i class="fas fa-th"></i>
-      <p>Apps</p>
-    </h4>
-    <h4 onclick="fetchHtml('About',2)">
-      <i class="fas fa-info-circle"></i>
-      <p>About</p>
-    </h4>
-  </footer>
+  
   <script src="script.js"></script>
 </body>
 
