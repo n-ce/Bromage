@@ -93,7 +93,10 @@ header{text-align: center;}
 .drawer {
   display: none;
 }
-
+span {
+  display: flex;
+  align-items: center;
+}
 
 @media (orientation:landscape) {
 
