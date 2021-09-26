@@ -9,7 +9,6 @@ function fetchHtml(a) {
     })
     .then((html) => {
       document.getElementById('root').innerHTML = html;
-      document.querySelector('header').innerText = a;
     });
 }
 

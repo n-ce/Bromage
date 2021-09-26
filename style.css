@@ -40,7 +40,7 @@ body,
   display: flex;
   align-items: center;
 }
-
+header{text-align: center;}
 #root {
   height: 90%;
   justify-content: center;
