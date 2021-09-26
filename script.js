@@ -4,16 +4,24 @@ var nav = document.getElementsByTagName('h4');
 
 function fetchHtml(a) {
   fetch("https://raw.githubusercontent.com/n-ce/SPACE-Modules/main/" + a + ".html")
-    .then((response) => {
-      return response.text();
-    })
-    .then((html) => {
+    .then(response => response.text())
+    .then(html => {
       document.getElementById('root').innerHTML = html;
     });
+  if (a != "Home" && a != "Apps" && a != "About") {
+    console.log(a);
+    fetch("https://raw.githubusercontent.com/n-ce/SPACE-Modules/main/" + a + ".js")
+      .then(response => response.text())
+      .then(txt => {
+        var script = document.createElement("script");
+        script.innerHTML = txt;
+        document.body.appendChild(script);
+      })
+  }
 }
 
 //drawer
-function drawer(){
+function drawer() {
   document.querySelectorAll('.nav')[1].classList.toggle("drawer");
 }
 
@@ -37,9 +45,10 @@ function dark() {
 }
 
 //fullscreen
-function fullscreen(){
-document.documentElement.requestFullscreen();
+function fullscreen() {
+  document.documentElement.requestFullscreen();
 }
-function exitfs(){
+
+function exitfs() {
   document.exitFullscreen();
 }

@@ -11,6 +11,7 @@
 </head>
 
 <body onload="fetchHtml('Home')">
+  <div id="root">[Loading...]</div>
   <div class="nav">
     <button class="button fas fa-home" onclick="fetchHtml('Home')"></button>
     <button class="button fas fa-th" onclick="fetchHtml('Apps')"></button>
@@ -21,9 +22,6 @@
     <button class="button fas fa-adjust" onclick="dark()"></button>
     <button class="button fas fa-expand" onclick="fullscreen()"></button>
     <button class="button fas fa-compress" onclick="exitfs()"></button>
-  </div>
-  <div id="root">
-    <div id="preloader"></div>
   </div>
   <script src="script.js"></script>
 </body>
