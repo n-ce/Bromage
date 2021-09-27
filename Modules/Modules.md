@@ -2,10 +2,6 @@
 
 #### Welcome to the Space framework, it changes everything about how we see basic html programs.
 
-#### This repo is about Modules designed for the [S.P.A.C.E.](https://github.com/n-ce/SPACE) framework.
-
-#### Site running at https://n-ce.github.io/SPACE/
-
 ## Add your own Modules! Instructions below:
 - 2 files to create and 1 file to change
 - create "yourModuleName.html" inside Apps folder.
@@ -34,5 +30,5 @@
 ### What to edit in Apps.html?
 - Add this code inside ul tag
 ```
-<li onclick="fetchHtml('Apps/myModuleName')">My Module Name</li>
+<li onclick="fetchHtml('Apps/yourModuleName')">Your Module Name</li>
   

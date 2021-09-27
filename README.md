@@ -6,4 +6,5 @@
 
 - Fetch API is the MPC of SPACE!
 
-- It's Modular structure based on Fetch API, which dynamically loads HTML pages from [SPACE Modules Repo.](https://github.com/n-ce/SPACE-Modules)
+- It's Modular structure based on Fetch API, which dynamically loads HTML pages from [ Modules Folder](https://github.com/n-ce/SPACE/blob/main/Modules)
+- [Learn more about the Modules](https://github.com/n-ce/SPACE/blob/main/Modules/Modules.md)
