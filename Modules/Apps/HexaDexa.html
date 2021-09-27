@@ -1,0 +1,64 @@
+<span>
+  <button onclick="fetchHtml('Apps')" class="hxdx">Back</button>
+  <header>&nbsp;HexaDexa</header>
+</span>
+<div class="dxhx ">
+  <p>000</p>
+  <button class="hxdx" onclick="C2C()">Copy</button>
+</div>
+<input onkeyup="B2C()" placeholder="Enter HEXCODE/Decimal" />
+<div class="dxhx">
+  <button class="hxdx" onclick="H2D()">DECIMAL</button>
+  <button class="hxdx" onclick="D2H()">HEXADECIMAL</button>
+</div>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap');
+
+  .dxhx {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  p,
+  input,
+  .hxdx {
+    font-family: "Exo", monospace;
+    font-size: 1.5rem;
+    margin: 1rem;
+    border: none;
+    color: inherit;
+  }
+
+  input {
+    text-align: center;
+    background: none;
+    outline: none;
+    box-shadow: 0 0.25rem #4F9;
+  }
+
+  .hxdx {
+    background-color: #4F92;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #4F99;
+    user-select: none;
+  }
+
+  .hxdx:focus {
+    background-color: #4F9;
+  }
+
+  .dxhx,
+  input {
+    width: 90%;
+  }
+
+  @media (orientation:landscape) {
+    .dxhx {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+</style>

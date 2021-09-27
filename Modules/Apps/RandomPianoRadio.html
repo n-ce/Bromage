@@ -1,0 +1,42 @@
+<span>
+  <button onclick="fetchHtml('Apps')">Back</button>
+  <header>&nbsp;Random Piano Radio</header>
+</span>
+<div id="rprhtml">
+  <div id="rprbody"></div>
+</div>
+
+<style>
+span{user-select: none;}
+  #rprhtml {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00B77B;
+    font-family: monospace;
+  }
+
+  #rprbody {
+    font-size: 1.5rem;
+    background-color: #00D08C77;
+    height: 50%;
+    width: 50%;
+    border: 1rem solid #00B77B77;
+    border-radius: 2rem;
+    background-image: url("Play.webp");
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: boom 2s ease-in-out infinite;
+  }
+
+  @keyframes boom {
+    50% {
+      transform: scale(0.95);
+      background-size: 40%;
+      border-width: 1rem;
+    }
+  }
+
+</style>

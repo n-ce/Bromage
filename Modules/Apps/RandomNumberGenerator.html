@@ -1,0 +1,29 @@
+<span>
+  <button onclick="fetchHtml('Apps')">Back</button>
+  <header>&nbsp;Random Number Generator</header>
+</span>
+<div id="rnghtml">
+  <div id="rngbody">
+    Shake Device or Click on the Number.
+  </div>
+</div>
+
+<style>
+span{user-select: none};
+#rnghtml{
+  touch-action: none;
+}
+ #rngbody {
+  overflow-wrap: break-word;
+  font-size: 5rem;
+  color: cornflowerblue;
+  animation:fade 1s ease-in-out;
+  font-family: monospace;
+}
+@keyframes fade{
+  from{
+    opacity: 0;
+    transform: skewY(91deg) scale(2) translateY(100%);
+  }
+}
+</style>

@@ -1,0 +1,59 @@
+<span>
+  <button onclick="fetchHtml('Apps')">Back</button>
+  <header>&nbsp;Binaural Minima</header>
+</span>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+<div id="bmBody">
+  <h1>BINAURAL MINIMA</h1>
+  <input id="bmInput" type="range" max=1000 step=5 />
+  <h3 id="bmH3">000hz</h3>
+  <div class="ui left floated compact segment">
+    <div class="ui fitted slider checkbox">
+      <input type="checkbox" class="checkbox" onclick="start()">
+      <label></label>
+    </div>
+  </div>
+</div>
+<style>
+  span {
+    user-select: none;
+  }
+
+  #bmBody {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #bmInput {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 80%;
+    height: 1rem;
+    border-radius: 2rem;
+    background: lightpink;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -o-transition: .2s;
+    transition: opacity .2s;
+  }
+
+  #bmInput::hover {
+    opacity: 1
+  }
+
+  #bmInput::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    background: skyblue;
+  }
+</style>
