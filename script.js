@@ -2,14 +2,14 @@
 
 
 function fetchHtml(a) {
-  fetch("https://raw.githubusercontent.com/n-ce/SPACE-Modules/main/" + a + ".html")
+  fetch("Modules/" + a + ".html")
     .then(response => response.text())
     .then(html => {
       document.getElementById('root').innerHTML = html;
     });
   if (a != "Apps" && a != "About") {
     console.log(a);
-    fetch("https://raw.githubusercontent.com/n-ce/SPACE-Modules/main/" + a + ".js")
+    fetch("Modules/" + a + ".js")
       .then(response => response.text())
       .then(txt => {
         var script = document.createElement("script");
