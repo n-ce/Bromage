@@ -1,6 +1,4 @@
-# SPACE-Modules
-
-#### Welcome to the Space framework, it changes everything about how we see basic html programs.
+# Homepage Modules(Apps)
 
 ## Add your own Modules! Instructions below:
 - 2 files to create and 1 file to change
@@ -17,15 +15,15 @@
 </span>
 ```
 
-- No body,html,head,script tags.
-- No scriptsrc tag required, SPACE does the work for you.
-- only put html that you would put inside your body tag in your projects.
-- always use id/class for all the elements.
+- No body, html, head, script tags.
+- No script src tag required, linking is native.
+- Only write html that you would put inside your body tag in your projects.
+- Always use id/class for all the elements.
 - id/class naming scheme example for "yourModuleName" - "#yMNbody","#yMNdiv",".yMNbody".
-- Incase its not clear refer the other apps already available.
+- In case it's not clear refer the other apps already available.
 
 ### What should my JS file contain?
-- same as any js file
+- Same as any JS file
 
 ### What to edit in Apps.html?
 - Add this code inside ul tag
