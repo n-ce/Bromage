@@ -1,10 +1,9 @@
-# SPACE
+# Browser Homepage
 
-- An SPA with core functionalities without NodeJS, just using pure HTML5, CSS3 and ES6.
+- A homepage for browsers! with core functionalities of an app created without NodeJS to avoid overhead, just using pure HTML5, CSS3 and ES6 to maximize page efficiency.
 
-- SPACE is a library of small code HTML apps and games!
+- Also consists a library of small code HTML apps and games just like a traditional homescreen.
 
-- Fetch API is the MPC of SPACE!
+- It's Modular structure is based on Fetch API, which dynamically loads HTML Apps from [ Modules Folder.](https://github.com/n-ce/SPACE/blob/main/Modules)
 
-- It's Modular structure based on Fetch API, which dynamically loads HTML pages from [ Modules Folder](https://github.com/n-ce/SPACE/blob/main/Modules)
-- [Learn more about the Modules](https://github.com/n-ce/SPACE/blob/main/Modules/Modules.md)
+- [Learn more about the Modules.](https://github.com/n-ce/SPACE/blob/main/Modules/Modules.md)
