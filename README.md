@@ -1,6 +1,9 @@
 # SPACE
-Single Page Application Core Emulator.
 
-Building core SPA functionalities without NodeJS, just using pure HTML5, CSS3 and ES6.
+- An SPA with core functionalities without NodeJS, just using pure HTML5, CSS3 and ES6.
 
-Modular structure based on Fetch API, dynamically loads modules from this [repo](https://github.com/n-ce/SPACE-Modules)
+- SPACE is a library for hosting small code HTML apps and games!
+
+- Fetch API is the MPC of SPACE!
+
+- It's Modular structure based on Fetch API, which dynamically loads HTML pages from [SPACE Modules Repo.](https://github.com/n-ce/SPACE-Modules)

@@ -20,7 +20,11 @@ body,
   display: flex;
   align-items: center;
 }
-header{text-align: center;}
+
+header {
+  text-align: center;
+}
+
 #root {
   height: 90%;
   justify-content: center;
@@ -73,6 +77,7 @@ header{text-align: center;}
 .drawer {
   display: none;
 }
+
 span {
   display: flex;
   align-items: center;

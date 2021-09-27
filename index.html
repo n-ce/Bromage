@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A Single Page Application Built using Pure JS, and a library of small HTML apps & games." />
   <meta name="theme-color" content="#1f1f1f" />
   <title>SPACE</title>
   <link rel="stylesheet" href="style.css" />
@@ -12,16 +13,16 @@
 
 <body onload="fetchHtml('Home')">
   <div id="root">[Loading...]</div>
+  <div class="nav drawer ">
+    <button class="button fas fa-adjust" onclick="dark()"></button>
+    <button class="button fas fa-expand" onclick="fullscreen()"></button>
+    <button class="button fas fa-compress" onclick="exitfs()"></button>
+  </div>
   <div class="nav">
     <button class="button fas fa-home" onclick="fetchHtml('Home')"></button>
     <button class="button fas fa-th" onclick="fetchHtml('Apps')"></button>
     <button class="button fas fa-info-circle" onclick="fetchHtml('About')"></button>
     <button class="button fas fa-bars" onclick="drawer()"></button>
-  </div>
-  <div class="nav drawer ">
-    <button class="button fas fa-adjust" onclick="dark()"></button>
-    <button class="button fas fa-expand" onclick="fullscreen()"></button>
-    <button class="button fas fa-compress" onclick="exitfs()"></button>
   </div>
   <script src="script.js"></script>
 </body>
