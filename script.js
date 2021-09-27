@@ -1,6 +1,5 @@
 // displays newer content without opening new pages
 
-var nav = document.getElementsByTagName('h4');
 
 function fetchHtml(a) {
   fetch("https://raw.githubusercontent.com/n-ce/SPACE-Modules/main/" + a + ".html")
@@ -21,6 +20,9 @@ function fetchHtml(a) {
 }
 
 //drawer
+
+var nav = document.getElementsByTagName('h4');
+
 function drawer() {
   document.querySelectorAll('.nav')[1].classList.toggle("drawer");
 }
@@ -33,7 +35,7 @@ if (localStorage.getItem('theme')) {
 
 function dark() {
   document.body.classList.toggle("bodyDark");
-  for (var i = 0; i < 4; i++) {
+  for (var i = 0; i < 7; i++) {
     document.querySelectorAll('.button')[i].classList.toggle("buttonDark");
   }
   if (document.body.classList.contains("bodyDark")) {
