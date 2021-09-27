@@ -1,4 +1,4 @@
-# Browser Homepage
+# A Browser Homepage - Bromage
 
 - A homepage for browsers! with core functionalities of an app created without NodeJS to avoid overhead, just using pure HTML5, CSS3 and ES6 to maximize page efficiency.
 
