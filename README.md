@@ -2,7 +2,7 @@
 
 - An SPA with core functionalities without NodeJS, just using pure HTML5, CSS3 and ES6.
 
-- SPACE is a library for hosting small code HTML apps and games!
+- SPACE is a library of small code HTML apps and games!
 
 - Fetch API is the MPC of SPACE!
 
