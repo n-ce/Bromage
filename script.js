@@ -7,7 +7,7 @@ function fetchHtml(a) {
     .then(html => {
       document.getElementById('root').innerHTML = html;
     });
-  if (a != "Home" && a != "Apps" && a != "About") {
+  if (a != "Apps" && a != "About") {
     console.log(a);
     fetch("https://raw.githubusercontent.com/n-ce/SPACE-Modules/main/" + a + ".js")
       .then(response => response.text())
