@@ -40,8 +40,6 @@ header {
   border: 0.1rem solid #1E88E5;
   border-radius: 1rem;
   box-shadow: 0.15rem 0.3rem 0.3rem #04C3;
-  position: sticky;
-  top: 0.5%;
   margin-bottom: 3%;
   animation: slide 0.5s ease-in-out;
   width: 90%;
@@ -98,8 +96,8 @@ span {
   .nav {
     width: 7%;
     flex-direction: column;
-    left: 1%;
     margin-right: 2%;
+    margin-top: 2%;
   }
 
   #root {
@@ -109,6 +107,6 @@ span {
 
 @keyframes slide {
   from {
-    transform: translateX(-100%);
+    transform: translateX(100%);
   }
 }
