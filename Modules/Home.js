@@ -4,7 +4,7 @@ if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition((position) =>
   {
     console.log(position);
-    fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&` + `lon=${position.coords.longitude}&appid=6d055e39ee237af35ca066f35474e9df`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&` + `lon=${position.coords.longitude}&appid=6d055e39ee237af35ca066f35474e9df`)
       .then(res => res.json())
       .then(data => {
         console.log(data);
