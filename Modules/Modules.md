@@ -1,9 +1,9 @@
 # Homepage Modules(Apps)
 
 ## Add your own Modules! Instructions below:
-- 2 files to create and 1 file to change
-- create "yourModuleName.html" inside Apps folder.
-- create "yourModuleName.js" inside Apps folder.
+- 2 files to create and 1 file to change.
+- create "yourModuleName.html" inside Modules/Apps folder.
+- create "yourModuleName.js" inside Modules/Apps folder.
 - edit file "Apps.html".
 
 ### What should my HTML file contain?
