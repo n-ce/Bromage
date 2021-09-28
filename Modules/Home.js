@@ -9,7 +9,6 @@ let weather = document.querySelector(".weather");
 let loc = document.querySelector(".location");
 
 let longitude,latitude;
-window.addEventListener("load", () => {
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition((position) => 
     {
@@ -30,4 +29,3 @@ if (navigator.geolocation) {
             });
 	});
 }
-});
