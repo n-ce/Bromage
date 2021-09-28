@@ -10,7 +10,7 @@ if (navigator.geolocation) {
         console.log(data);
         document.getElementById("temp").innerText = Math.floor(data.main.temp - 273) + "°C";
         document.getElementById("weather").innerText = data.weather[0].description;
-        document.getElementById("location").innerText = data.name + "," + data.sys.country;
+        document.getElementById("location").innerText = data.name + ", " + data.sys.country;
       })
   })
 }
