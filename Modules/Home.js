@@ -8,3 +8,8 @@ fetch('https://dog.ceo/api/breeds/image/random')
   .then(data => {
      document.getElementById('dogs').src = data.message;
   })
+fetch('https://api.imgflip.com/get_memes')
+  .then(response => response.json())
+  .then(data => {
+     document.getElementById('memes').src = data.data.memes[0].url;
+  })
