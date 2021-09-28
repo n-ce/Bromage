@@ -1,44 +1,34 @@
-$(document).ready(function()
-{
-$("#form-submit").submit(
-    function(event)
+fetch('https://api.quotable.io/random')
+.then(response => response.json())
+.then(data => {
+  document.getElementById('quotes').innerText="\""+data.content+"\"\n\n"+data.author;
+})
+
+let temperature = document.querySelector(".temp");
+let weather = document.querySelector(".weather");
+let loc = document.querySelector(".location");
+
+let longitude,latitude;
+window.addEventListener("load", () => {
+if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition((position) => 
     {
-        fetch_data(event);
-    }
-)
+        console.log(position);
+        longitude = position.coords.longitude;
+        latitude = position.coords.latitude;
+        fetch(
+            `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&` +
+            `lon=${longitude}&appid=6d055e39ee237af35ca066f35474e9df`)
+            .then((response) => {
+            return response.json();
+            })
+            .then((data) => {
+            console.log(data);
+            temperature.textContent =
+                Math.floor(data.main.temp - 273) + "°C";
+            weather.textContent = data.weather[0].description;
+            loc.textContent = data.name + "," + data.sys.country;
+            });
+	});
+}
 });
-
-function fetch_data(event)
-{
-    var request;
-    event.preventDefault();
-    request=$.ajax
-    (
-        {
-            url:'https://api.openweathermap.org/data/2.5/weather',
-            type : "GET",
-            data :
-            {
-                q: $("#city").val(),
-                /*Enter here user key provided when you register on the website
-                https://home.openweathermap.org/api_keys*/
-                appid:'user_api_key',
-                units:'metric'
-            }
-        }
-    );
-    request.done(function(response)
-    {
-        format_data(response);
-    });
-}
-
-function format_data(jsonObject)
-{
-    var city_name=jsonObject.name;
-    var city_weather =jsonObject.weather[0].main;
-    var city_temp=jsonObject.main.temp;
-    $("#city-name").text("Displaying result for the city "+ city_name);
-    $("#city-weather").text("Current Weather is "+city_weather);
-    $("#city-temp").text("Current Temperature is "+ city_temp +" Celsius");
-}
