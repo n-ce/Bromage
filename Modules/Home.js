@@ -6,5 +6,5 @@ fetch('https://api.quotable.io/random')
 fetch('https://dog.ceo/api/breeds/image/random')
   .then(response => response.json())
   .then(image => {
-     document.getElementById('dogs').src = image.message;
+     document.getElementById('dogs').src = "\""+image.message+"\"";
   })
