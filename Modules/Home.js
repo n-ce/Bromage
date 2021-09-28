@@ -16,8 +16,7 @@ if (navigator.geolocation) {
         console.log(position);
         longitude = position.coords.longitude;
         latitude = position.coords.latitude;
-        fetch(
-            `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&` +
+        fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&` +
             `lon=${longitude}&appid=6d055e39ee237af35ca066f35474e9df`)
             .then((response) => {
             return response.json();
