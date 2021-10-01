@@ -1,3 +1,7 @@
+var canvas = document.getElementsById('canvas');
+var heightRatio = 1.2;
+canvas.height = canvas.width * heightRatio;
+
 var map = {
   tile_size: 16,
 
