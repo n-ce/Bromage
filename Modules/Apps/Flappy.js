@@ -1,7 +1,3 @@
-var canvas = document.getElementsById('canvas');
-var heightRatio = 1.2;
-canvas.height = canvas.width * heightRatio;
-
 var map = {
   tile_size: 16,
 
@@ -746,8 +742,9 @@ window.requestAnimFrame =
 var canvas = document.getElementById("canvas"),
   ctx = canvas.getContext("2d");
 
-canvas.width = 800;
-canvas.height = 550;
+var heightRatio = 1.2;
+canvas.height = canvas.width * heightRatio;
+
 
 var game = new Clarity();
 game.set_viewport(canvas.width, canvas.height);
