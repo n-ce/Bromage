@@ -742,7 +742,7 @@ window.requestAnimFrame =
 var canvas = document.getElementById("canvas"),
   ctx = canvas.getContext("2d");
 
-canvas.height = canvas.width = 100;
+canvas.height = canvas.width = 500;
 
 
 var game = new Clarity();
