@@ -742,8 +742,8 @@ window.requestAnimFrame =
 var canvas = document.getElementById("canvas"),
   ctx = canvas.getContext("2d");
 
-canvas.width = 400;
-canvas.height = 400;
+canvas.width = 800;
+canvas.height = 550;
 
 var game = new Clarity();
 game.set_viewport(canvas.width, canvas.height);
