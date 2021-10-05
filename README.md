@@ -23,12 +23,12 @@
 
 <h2 align="center">Website at a glance</h2>
 <p align="center">
-<img src="Screenshots/options.jpg" width=250 height=200>
-<img src="Screenshots/weather.jpg" width=250 height=200>
-<img src="Screenshots/car.jpg" width=250 height=200>
-<img src="Screenshots/game.jpg" width=250 height=200>   
-<img src="Screenshots/hex.jpg" width=250 height=200> 
-<img src="Screenshots/sine.jpg" width=250 height=200>                                                
+<img src="Screenshots/options.jpg" width=400>
+<img src="Screenshots/weather.jpg" width=400>
+<img src="Screenshots/car.jpg" width=400>
+<img src="Screenshots/game.jpg" width=400>   
+<img src="Screenshots/hex.jpg" width=400> 
+<img src="Screenshots/sine.jpg" width=400>                                                
 </p>
 
 # A Browser Homepage - Bromage
