@@ -28,5 +28,6 @@ f.addEventListener("input",(event)=>{
         gain.gain.value = 0;
 
 };
+document.getElementsByClassName('.bm')[0].addEventListenter('click',function(){gain.gain.value = 0;}
 
 document.querySelector("#bmH3").innerHTML = f.value + "hz"});
