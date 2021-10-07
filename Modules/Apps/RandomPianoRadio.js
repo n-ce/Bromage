@@ -10,7 +10,7 @@ function command(x) {
     body.style.backgroundImage = "url(https://raw.githubusercontent.com/n-ce/RandomPiano/main/Pause.webp)";
     body.style.backgroundColor = "#059C6A77";
     sound.play();
-    document.querySelector("#rprback").onclick = function(){count++}
+    document.querySelector("#rprback").addEventListener('click', function(){count++})
 
   }
   else {
