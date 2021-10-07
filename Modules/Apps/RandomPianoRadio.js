@@ -1,6 +1,5 @@
 var count = 0;
 var body = document.querySelector('#rprbody');
-
 body.onclick = function() { count++; }
 
 setTimeout(loop, 500);
@@ -11,6 +10,8 @@ function command(x) {
     body.style.backgroundImage = "url(https://raw.githubusercontent.com/n-ce/RandomPiano/main/Pause.webp)";
     body.style.backgroundColor = "#059C6A77";
     sound.play();
+    document.querySelector("#rprback").onclick = function(){count++}
+
   }
   else {
     body.style.backgroundImage = "url(https://raw.githubusercontent.com/n-ce/RandomPiano/main/Play.webp)";
